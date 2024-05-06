@@ -48,5 +48,5 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 - [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) - deploy your Next.js app 
 
-Author:
+## Author:
 Wissal GHOUDI - wissal.ghoudi@gmail.com
