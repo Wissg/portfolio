@@ -43,7 +43,7 @@ export function DrawerDemo() {
 	return (
 		<Drawer>
 			<DrawerTrigger asChild>
-				<Button variant="outline">Donation</Button>
+				<Button variant="outline">Donate</Button>
 			</DrawerTrigger>
 			<DrawerContent>
 				<div className="mx-auto w-full max-w-sm">
