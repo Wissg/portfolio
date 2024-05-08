@@ -17,6 +17,10 @@ This project is a personal portfolio website aimed at showcasing my professional
 - Dynamic Navigation bar customizable via JSON
 - Donation system using a drawer
 - ligth/dark theme
+- Hero page with animation (frame motion)
+- background animation particles
+- custom error page (404)
+
 ### Work in Progress:
 - About Me Section
 - Portfolio Showcase
