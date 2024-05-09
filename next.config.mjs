@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
       output: 'standalone',
+      experimental:{
+        serverComponentsExternalPackages: ['pino', 'pino-pretty']
+    },
 
       // An exported build output, out directory, that only includes static HTML/CSS/JS. Useful for self-hosting without a Node.js server.
       // output: 'export',
