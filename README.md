@@ -20,6 +20,7 @@ This project is a personal portfolio website aimed at showcasing my professional
 - Hero page with animation (frame motion)
 - background animation particles
 - custom error page (404)
+- Logger utilities for debugging using pino/pino-pretty, with the usage of appenders (console/file) as well as transformers for console pretty formatting.
 
 ### Work in Progress:
 - About Me Section
@@ -29,6 +30,7 @@ This project is a personal portfolio website aimed at showcasing my professional
 - i18n (Internationalization)
 - Backend (REST API)
 - Authentication
+- Todo send to logger collector (Logtrail)
 
 ## Getting Started
 
