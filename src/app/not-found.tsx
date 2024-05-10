@@ -12,10 +12,10 @@ export default async function NotFound() {
 					<h1 className="mb-4 text-7xl lg:text-9xl font-extrabold text-primary-600">
 						404
 					</h1>
-					<p className="mb-4 text-3xl font-bold">Something's missing.</p>
+					<p className="mb-4 text-3xl font-bold">Something&aposs missing.</p>
 					<p className="mb-4 text-lg font-light">
-						Sorry, we can't find that page. You'll find lots to explore on the
-						home page.
+						Sorry, we can&apost find that page. You&aposll find lots to explore
+						on the home page.
 					</p>
 					<div className="grid grid-cols-1 gap-4 md:grid-cols-2">
 						<Button asChild>

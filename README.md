@@ -21,6 +21,7 @@ This project is a personal portfolio website aimed at showcasing my professional
 - background animation particles
 - custom error page (404)
 - Logger utilities for debugging using pino/pino-pretty, with the usage of appenders (console/file) as well as transformers for console pretty formatting.
+- Building docker image 
 
 ### Work in Progress:
 - About Me Section
@@ -30,11 +31,39 @@ This project is a personal portfolio website aimed at showcasing my professional
 - i18n (Internationalization)
 - Backend (REST API)
 - Authentication
-- Todo send to logger collector (Logtrail)
+- Todo send to logger collector ([Logtrail](https://betterstack.com/docs/logs/javascript/pino/))
 
 ## Getting Started
+### Using Docker and Makefile
 
-First, run the development server:
+#### Development Environment (for development only)
+
+```bash
+make build-development
+make start-development
+```
+
+Open [http://localhost:3000](http://localhost:3000)
+
+#### Production Environment
+
+```bash
+make build-production
+make start-production
+```
+
+Open [http://localhost:3000](http://localhost:3000)
+
+### Running Locally
+
+#### Install Packages:
+
+```bash
+npm install
+```
+
+#### Run app:
+To start the development server, run:
 
 ```bash
 npm run dev
@@ -46,7 +75,7 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the result.
 
 ## Learn More
 

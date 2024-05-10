@@ -1,0 +1,25 @@
+services:
+  server:
+    build:
+      context: ../../
+      target: development
+      dockerfile: docker/development/Dockerfile
+    image: nextjs-dev
+    environment:
+      NODE_ENV: development
+    ports:
+      - 3000:3000
+    volumes:
+      - ../../:/app
+      - /app/node_modules
+      - /app/.next
+    develop:
+      # allow hot reload docker compose up --watch
+      watch:
+        - action: sync
+          path: ../../src
+          target: /usr/src/app/src
+          ignore:
+            - node_modules/
+        - action: rebuild
+          path: package.json
