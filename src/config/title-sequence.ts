@@ -6,12 +6,15 @@ type SequenceElement =
 	| ((element: HTMLElement | null) => void | Promise<void>);
 
 export const titleSequence: Sequence = [
-	"Wissal",
+	'Wissal',
 	1000,
-	"Softwarre Egeneer",
+	'Software Engineer',
 	1000,
-	"Mobile Developer",
+	'Project Manager',
 	1000,
-	"UI/UX Designer",
+	'Back End Developer',
+	1000,
+	'Full Stack Developer',
 	1000,
 ];
+
