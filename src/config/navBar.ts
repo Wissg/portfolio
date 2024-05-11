@@ -4,30 +4,42 @@ export type NavBarConfig = typeof navItems
 
 export const navItems: NavMenuItem[] = [
 	{
-		title: "Home",
-		links: [
-			{ title: "About", href: "/about" },
-			{ title: "Contact", href: "/contact" },
-		],
-		isLink: false,
-		isHidden: false,
-		isDisabled: false,
-	},
-	{
-		title: "Products",
-		links: [
-			{ title: "Product 1", href: "/products/1" , isDisabled: true},
-			{ title: "Product 2", href: "/products/2" },
-		],
-		isLink: false,
-		isHidden: false,
-		isDisabled: false,
-	},
-	{
-		title: "Login",
-		href: "/login",
+		title: 'Home',
+		href: '/',
 		isLink: true,
 		isHidden: false,
 		isDisabled: false,
+	},
+	{
+		title: 'Main Navigation',
+		links: [
+			{
+				title: 'About Me',
+				href: '#about',
+				description: 'Learn more about my background, interests, and skills.',
+			},
+			{
+				title: 'Skills',
+				href: '#skills',
+				description: 'Explore my skills and expertise in various domains.',
+			},
+			{
+				title: 'Experience',
+				href: '#experience',
+				description: 'Discover my professional journey and work experience.',
+			},
+			{
+				title: 'Projects',
+				href: '#projects',
+				description: 'View my portfolio of past and ongoing projects.',
+			},
+			{
+				title: 'Contact',
+				href: '#contact',
+				description:
+					'Get in touch with me to discuss collaborations, opportunities, or inquiries.',
+			},
+		],
+		isLink: false,
 	},
 ];
