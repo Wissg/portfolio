@@ -11,7 +11,7 @@ export const navItems: NavMenuItem[] = [
 		isDisabled: false,
 	},
 	{
-		title: 'Main Navigation',
+		title: 'Sections',
 		links: [
 			{
 				title: 'About Me',
