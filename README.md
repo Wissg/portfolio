@@ -35,6 +35,7 @@ This project is a personal portfolio website aimed at showcasing my professional
 
 ## Getting Started
 ### Using Docker and Makefile
+To utilize this setup, ensure you have both make and docker installed on your system.
 
 #### Development Environment (for development only)
 
@@ -55,8 +56,7 @@ make start-production
 Open [http://localhost:3000](http://localhost:3000)
 
 ### Running Locally
-
-#### Install Packages:
+Ensure that Node.js is installed.#### Install Packages:
 
 ```bash
 npm install
