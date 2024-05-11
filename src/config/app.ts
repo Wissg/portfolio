@@ -1,9 +1,8 @@
 export type AppConfig = typeof appConfig;
 
 export const appConfig = {
-	name: 'Next.js ds',
-	description:
-		'Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.',
+	name: 'Wissg Portfolio',
+	description: 'Personal portfolio website.',
 	links: {
 		twitter: 'https://twitter.com/xxxx',
 		linkedin: 'https://www.linkedin.com/in/wissal-ghoudi-15ab021b9/',
