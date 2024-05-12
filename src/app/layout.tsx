@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 import { SiteHeader } from "@/components/header/home-header";
 import { ThemeProvider } from "@/provider/theme-provider";
 import { SiteFooter } from "@/components/footer/home-footer";
+import ActiveSectionContextProvider from '@/provider/active-section-context';
 
 export const metadata: Metadata = {
 	title: {
@@ -39,15 +40,17 @@ export default function RootLayout({ children }: RootLayoutProps) {
 			<head />
 			<body
 				className={cn(
-					"min-h-screen bg-background font-sans antialiased",
+					'min-h-screen bg-background font-sans antialiased',
 					fontSans.variable
 				)}>
 				<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-					<div className="relative flex min-h-screen flex-col">
-						<SiteHeader />
-						<div className="flex-1">{children}</div>
-						<SiteFooter />
-					</div>
+					<ActiveSectionContextProvider>
+						<div className="relative flex min-h-screen flex-col">
+							<SiteHeader />
+							<div className="flex-1">{children}</div>
+							<SiteFooter />
+						</div>
+					</ActiveSectionContextProvider>
 				</ThemeProvider>
 			</body>
 		</html>
