@@ -17,7 +17,7 @@ import {
 } from "@/components/ui/drawer";
 import Link from "next/link";
 
-export function DrawerDemo() {
+export function DonateBtn() {
 	const defaultAmount = 5;
 	const minAmount = 1;
 	const maxAmount = 999;
@@ -30,7 +30,7 @@ export function DrawerDemo() {
 	}
 
 	function getPaypalLink() {
-		return appConfig.links.paypal.replace("{amount}", goal.toString());
+		return appConfig.links.paypal.replace('{amount}', goal.toString());
 	}
 
 	const handleGoalChange = (newValue: string) => {
@@ -43,7 +43,7 @@ export function DrawerDemo() {
 	return (
 		<Drawer>
 			<DrawerTrigger asChild>
-				<Button variant="outline">Donate</Button>
+				<Button variant="link">Donate</Button>
 			</DrawerTrigger>
 			<DrawerContent>
 				<div className="mx-auto w-full max-w-sm">
