@@ -89,4 +89,10 @@ export const projectsData: ProjectsData = [
 			'Translate sound input in real-time (microphone or computer speaker).',
 		tags: ['Python'],
 	},
+	{
+		title: 'Image/Video Visualizer',
+		description:
+			'Integration of an image and video visualizer via API with features like pagination, favorites, and tags.',
+		tags: ['Python', 'Flask'],
+	},
 ];
