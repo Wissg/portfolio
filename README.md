@@ -22,15 +22,18 @@ This project is a personal portfolio website aimed at showcasing my professional
 - custom error page (404)
 - Logger utilities for debugging using pino/pino-pretty, with the usage of appenders (console/file) as well as transformers for console pretty formatting.
 - Building docker image 
-
-### Work in Progress:
 - About Me Section
 - Portfolio Showcase
 - Resume/CV Download
+- Experience Timeline
+- Education Timeline
+- Skills List
+
+### Work in Progress:
 - Contact Form
 - i18n (Internationalization)
-- Backend (REST API)
-- Authentication
+- Backend (REST API) with private (only acessible be my front app) and public API
+- Authentication using IdP (KeyCloak or Authentik)
 - Todo send to logger collector ([Logtrail](https://betterstack.com/docs/logs/javascript/pino/))
 
 ## Getting Started
