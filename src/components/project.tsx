@@ -42,7 +42,7 @@ export default function Project({
 							</p>
 						</ScrollShadow>
 					</CardBody>
-					<CardFooter>
+					<CardFooter className="overflow-visible">
 						<ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
 							{tags.map((tag, index) => (
 								<li
