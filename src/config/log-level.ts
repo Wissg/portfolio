@@ -22,7 +22,6 @@ export const logLevelData: { [key: string]: string } = {
 
 export const logLevels = new Map(Object.entries(logLevelData));
 
-
 // help in french
 // https://www.codeheroes.fr/2022/08/29/logging-nodejs-avec-pino/
 export function transport(
@@ -35,6 +34,7 @@ export function transport(
 				target: 'pino/file',
 				options: { destination: `${__dirname}/app.log`, mkdir: true },
 			},
+			//@ts-ignore
 			{
 				level: getLogLevel(logger),
 				target: 'pino-pretty',
