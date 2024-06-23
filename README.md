@@ -9,7 +9,7 @@ This project is a personal portfolio website aimed at showcasing my professional
 - CSS3
 - TypeScript
 - Tailwind
-- Shadcn/ ui
+- Shadcn/ui & Next ui
 - lucide-react
 
 ## Features
@@ -32,7 +32,7 @@ This project is a personal portfolio website aimed at showcasing my professional
 ### Work in Progress:
 - Contact Form
 - i18n (Internationalization)
-- Backend (REST API) with private (only acessible be my front app) and public API
+- Backend (REST API) with private API (only acessible be my front app) and also public API
 - Authentication using IdP (KeyCloak or Authentik)
 - Todo send to logger collector ([Logtrail](https://betterstack.com/docs/logs/javascript/pino/))
 
@@ -59,7 +59,8 @@ make start-production
 Open [http://localhost:3000](http://localhost:3000)
 
 ### Running Locally
-Ensure that Node.js is installed.#### Install Packages:
+Ensure that Node.js is installed.
+#### Install Packages:
 
 ```bash
 npm install
