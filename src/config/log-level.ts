@@ -6,7 +6,6 @@ import {
 	TransportPipelineOptions,
 	TransportSingleOptions,
 } from 'pino';
-import 'pino-pretty';
 
 // Todo : imporve to make it full customizable except name and level (create a new interface)
 
