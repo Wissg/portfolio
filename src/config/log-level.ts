@@ -1,4 +1,6 @@
+import { getLogLevel } from '@/utils/logUtils';
 import {
+	levels,
 	redactOptions,
 	TransportMultiOptions,
 	TransportPipelineOptions,
@@ -10,27 +12,41 @@ import {
 // Specifies the logging level configuration, where each key represents a context name.
 // If a specific context name is not found, the default logging level '*' is used,
 export const logLevelData: { [key: string]: string } = {
-	'*': 'info', // Default value
+	'*': 'debug', // Default value
 	undefined: 'debug',
-	home: 'info',
+	home: 'debug',
+	request: 'debug',
+	getRequestConfig: 'debug',
+	addLocale: 'debug',
 };
+
+export const logLevels = new Map(Object.entries(logLevelData));
+
 
 // help in french
 // https://www.codeheroes.fr/2022/08/29/logging-nodejs-avec-pino/
-export const transport:
-	| TransportSingleOptions
-	| TransportMultiOptions
-	| TransportPipelineOptions = {
-	targets: [
-		{
-			target: 'pino/file',
-			options: { destination: `${__dirname}/app.log`, mkdir: true },
-		},
-		{
-			target: 'pino-pretty',
-		},
-	],
-};
+export function transport(
+	logger: string
+): TransportSingleOptions | TransportMultiOptions | TransportPipelineOptions {
+	const transport: TransportMultiOptions = {
+		targets: [
+			{
+				level: getLogLevel(logger),
+				target: 'pino/file',
+				options: { destination: `${__dirname}/app.log`, mkdir: true },
+			},
+			{
+				level: getLogLevel(logger),
+				target: 'pino-pretty',
+				options: {
+					colorize: true,
+				},
+			},
+		],
+	};
+
+	return transport;
+}
 
 // informations hidding
 export const redact: string[] | redactOptions = {

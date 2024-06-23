@@ -1,8 +1,6 @@
-import { logLevelData, redact, transport } from '@/config/log-level';
-import { mkdir } from 'fs';
+import { logLevelData, logLevels, redact, transport } from '@/config/log-level';
 import pino, { Logger } from 'pino';
 
-const logLevels = new Map(Object.entries(logLevelData));
 
 // Returns the current logging level for a logger.
 export function getLogLevel(logger: string): string {
@@ -16,7 +14,12 @@ export function getLogLevel(logger: string): string {
 
 // Creates a new logger for the specified name.
 export function getLogger(name: string): Logger {
-	return pino({ name, level: getLogLevel(name), transport: transport, redact });
+	return pino({
+		name,
+		level: getLogLevel(name),
+		transport: transport(name),
+		redact,
+	});
 }
 
 let logger: Logger;
@@ -25,7 +28,7 @@ export function getLoggerDefault(): Logger {
 	if (!logger) {
 		logger = pino({
 			level: getLogLevel(''),
-			transport: transport,
+			transport: transport(''),
 			redact,
 		});
 	}
