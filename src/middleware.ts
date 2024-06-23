@@ -8,9 +8,11 @@ export function middleware(request: NextRequest) {
 	const logger = getLogger('request').child({ correlationId });
 
 	// Log all request headers and important information
-	logger.debug('Received request', {
-		method: request.method,
-		url: request.url,
-		headers: Object.fromEntries(request.headers.entries()),
-	});
+	if (!request.url.match('_next')) {
+		logger.debug('Received request', {
+			method: request.method,
+			url: request.url,
+			headers: Object.fromEntries(request.headers.entries()),
+		});
+	}
 }
