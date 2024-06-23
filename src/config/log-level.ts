@@ -34,14 +34,6 @@ export function transport(
 				target: 'pino/file',
 				options: { destination: `${__dirname}/app.log`, mkdir: true },
 			},
-			//@ts-ignore
-			{
-				level: getLogLevel(logger),
-				target: 'pino-pretty',
-				options: {
-					colorize: true,
-				},
-			},
 		],
 	};
 
