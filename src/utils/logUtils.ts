@@ -1,6 +1,6 @@
 import { logLevelData, logLevels, redact, transport } from '@/config/log-level';
 import pino, { Logger } from 'pino';
-
+import { mkdir } from 'fs';
 
 // Returns the current logging level for a logger.
 export function getLogLevel(logger: string): string {
