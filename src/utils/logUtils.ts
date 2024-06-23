@@ -17,7 +17,6 @@ export function getLogger(name: string): Logger {
 	return pino({
 		name,
 		level: getLogLevel(name),
-		transport: transport(name),
 		redact,
 	});
 }
@@ -28,7 +27,7 @@ export function getLoggerDefault(): Logger {
 	if (!logger) {
 		logger = pino({
 			level: getLogLevel(''),
-			transport: transport(''),
+	
 			redact,
 		});
 	}
