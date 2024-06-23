@@ -7,9 +7,9 @@ import { cn } from '@/lib/utils';
 const timelineVariants = cva('flex flex-col items-stretch', {
 	variants: {
 		positions: {
-			left: '[&>li]:grid-cols-[0_min-content_1fr]',
-			right: '[&>li]:grid-cols-[1fr_min-content]',
-			center: '[&>li]:grid-cols-[1fr_min-content_1fr]',
+			left: 'sm:[&>li]:grid-cols-[0_min-content_1fr]',
+			right: 'sm:[&>li]:grid-cols-[1fr_min-content]',
+			center: 'sm:[&>li]:grid-cols-[1fr_min-content_1fr]',
 		},
 	},
 	defaultVariants: {
