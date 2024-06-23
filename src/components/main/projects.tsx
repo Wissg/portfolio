@@ -9,7 +9,7 @@ export default function Projects() {
 	return (
 		<section
 			id="projects"
-			className="mb-12 md:mb-20 lg:mb-32 mx-auto text-center leading-8 scroll-mt-12">
+			className="mb-12 md:mb-20 lg:mb-32 mx-auto text-center leading-8 scroll-mt-28">
 			<SectionHeading>Projects</SectionHeading>
 			<div className="flex justify-center flex-wrap">
 				{projectsData.map((project, index) => (

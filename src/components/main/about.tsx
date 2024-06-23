@@ -10,7 +10,7 @@ export default function About() {
 	return (
 		<section
 			id="about"
-			className="mb-12 md:mb-20 lg:mb-32 max-w-4xl mx-auto text-center leading-8 scroll-mt-12">
+			className="mb-12 md:mb-20 lg:mb-32 max-w-4xl mx-auto text-center leading-8 scroll-mt-28">
 			<SectionHeading>{t('title')}</SectionHeading>
 			{paragraphs.map((paragraph: string, index: number) => (
 				<p key={index} className="mb-3">

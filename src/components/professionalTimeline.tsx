@@ -34,7 +34,7 @@ const ProfessionalTimeline: React.FC<ProfessionalTimelineProps> = ({
 	headingSection,
 }) => {
 	return (
-		<section id="experience" className="scroll-mt-28 mb-28 sm:mb-40">
+		<>
 			<SectionHeading>{headingSection}</SectionHeading>
 			<Timeline positions="center">
 				{professional.map((item, index) => (
@@ -99,7 +99,7 @@ const ProfessionalTimeline: React.FC<ProfessionalTimelineProps> = ({
 					</TimelineItem>
 				))}
 			</Timeline>
-		</section>
+		</>
 	);
 };
 

@@ -29,6 +29,11 @@ export const navItems: NavMenuItem[] = [
 				description: 'Discover my professional journey and work experience.',
 			},
 			{
+				title: 'Education',
+				href: '#education',
+				description: 'Explore my educational journey and projects.',
+			},
+			{
 				title: 'Projects',
 				href: '#projects',
 				description: 'View my portfolio of past and ongoing projects.',

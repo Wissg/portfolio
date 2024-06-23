@@ -3,9 +3,11 @@ import ProfessionalTimeline from '../professionalTimeline';
 
 export default function Experiences() {
 	return (
-		<ProfessionalTimeline
-			professional={experiencesData}
-			headingSection={'Work Experience'}
-		/>
+		<section id="experience" className="scroll-mt-28 mb-28 sm:mb-40">
+			<ProfessionalTimeline
+				professional={experiencesData}
+				headingSection={'Work Experience'}
+			/>
+		</section>
 	);
 }

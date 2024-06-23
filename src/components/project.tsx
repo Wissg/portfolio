@@ -5,6 +5,7 @@ import { projectsData } from '@/config/projects';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ScrollShadow } from '@nextui-org/scroll-shadow';
 import { Card, CardHeader, CardBody, CardFooter } from '@nextui-org/card';
+import { ScrollArea } from './ui/scroll-area';
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -30,17 +31,17 @@ export default function Project({
 				opacity: opacityProgess,
 			}}
 			className="group mb-3 sm:mb-8 last:mb-0 m-4">
-			<Card className="bg-gray-100 max-w-[25rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[25rem] hover:bg-gray-200 transition dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+			<Card className="bg-opacity-45 shadow-custom backdrop-blur-15 max-w-[25rem] border  rounded-lg sm:pr-8 relative sm:h-[25rem] hover:bg-gray-200 transition dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
 				<div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 flex flex-col h-full">
 					<CardHeader>
 						<h3 className="text-2xl font-semibold">{title}</h3>
 					</CardHeader>
 					<CardBody>
-						<ScrollShadow>
+						<ScrollArea>
 							<p className="mt-2 text-gray-700 dark:text-white/70">
 								{description}
 							</p>
-						</ScrollShadow>
+						</ScrollArea>
 					</CardBody>
 					<CardFooter className="overflow-visible">
 						<ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">

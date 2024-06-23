@@ -24,7 +24,7 @@ export default function Skills() {
 	return (
 		<section
 			id="skills"
-			className="mb-12 md:mb-20 lg:mb-32 mx-auto text-center leading-8 scroll-mt-12">
+			className="mb-12 md:mb-20 lg:mb-32 mx-auto text-center leading-8 scroll-mt-28">
 			<SectionHeading>My skills</SectionHeading>
 			{skillsData.map((category, index) => (
 				<div key={index} className="mb-12">
