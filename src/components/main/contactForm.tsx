@@ -26,7 +26,7 @@ export default function ContactForm() {
             id="contact"
             className="mb-12 md:mb-20 lg:mb-32 max-w-4xl mx-auto leading-8 scroll-mt-28">
             <SectionHeading>Contact</SectionHeading>
-            <Card className="mx-auto mb-3 last:mb-0 m-4 sm:mb-8 max-w-full md:max-w-2xl lg:max-w-3xl">
+            <Card className="mx-auto mb-3 last:mb-0 m-4 sm:mb-8 max-w-full">
                 {' '}
                 <CardHeader>
                     <CardTitle>Contact me</CardTitle>
