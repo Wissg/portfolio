@@ -12,41 +12,37 @@ import { LocaleToggle } from '@/components/LocaleToggle';
 export function SiteHeader() {
 	return (
 		<header className="sticky top-0 z-40 w-full border-b bg-background">
-			<div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
-				<MainNav items={navItems} />
-				<div className="flex flex-1 items-center justify-end">
+			<div
+				className="container mx-auto flex h-16 items-center space-x-4 px-4 sm:px-6 lg:px-8 sm:justify-between sm:space-x-0">
+				<MainNav items={navItems}/>
+				<div className="flex flex-1 items-center justify-end space-x-2 sm:space-x-4">
 					<nav className="flex items-center space-x-3">
-						<Link
-							href={appConfig.links.github}
-							target="_blank"
-							rel="noreferrer">
+						<Link href={appConfig.links.github} target="_blank" rel="noreferrer">
 							<div
 								className={buttonVariants({
 									size: 'icon',
 									variant: 'ghost',
 								})}>
-								<Icons.gitHub className="h-5 w-5" />
+								<Icons.gitHub className="h-5 w-5"/>
 								<span className="sr-only">GitHub</span>
 							</div>
 						</Link>
-						<Link
-							href={appConfig.links.linkedin}
-							target="_blank"
-							rel="noreferrer">
+						<Link href={appConfig.links.linkedin} target="_blank" rel="noreferrer">
 							<div
 								className={buttonVariants({
 									size: 'icon',
 									variant: 'ghost',
 								})}>
-								<Linkedin className="h-4 w-4 fill-current" />
-								<span className="sr-only">Linkedin</span>
+								<Linkedin className="h-4 w-4 fill-current"/>
+								<span className="sr-only">LinkedIn</span>
 							</div>
 						</Link>
-						<LocaleToggle />
-						<ThemeToggle />
+						<LocaleToggle/>
+						<ThemeToggle/>
 					</nav>
 				</div>
 			</div>
 		</header>
+
 	);
 }
